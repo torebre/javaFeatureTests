@@ -5,9 +5,6 @@ import jdk.incubator.vector.VectorOperators;
 
 import java.util.stream.IntStream;
 
-/**
- * Tested with Java 20
- */
 public class VectorTest {
 
 

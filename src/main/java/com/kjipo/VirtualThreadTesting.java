@@ -1,10 +1,9 @@
 package com.kjipo;
 
-import jdk.incubator.concurrent.StructuredTaskScope;
 
 import java.util.Base64;
 import java.util.Random;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.StructuredTaskScope;
 import java.util.stream.LongStream;
 
 public final class VirtualThreadTesting {
@@ -32,12 +31,8 @@ public final class VirtualThreadTesting {
             scope.join();
 
             tasks.forEach(taskFuture -> {
-                try {
-                    var task = taskFuture.get();
-                    System.out.println(task);
-                } catch (InterruptedException | ExecutionException e) {
-                    throw new RuntimeException(e);
-                }
+                var task = taskFuture.get();
+                System.out.println(task);
             });
 
         } catch (InterruptedException e) {
