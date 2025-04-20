@@ -4,27 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.kjipo</groupId>
-        <artifactId>canvas-client-multi-module</artifactId>
-        <version>0.1.0</version>
-    </parent>
-
-    <artifactId>clienttest</artifactId>
+    <groupId>com.kjipo</groupId>
+    <artifactId>featuretest</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.openapitools</groupId>
-            <artifactId>openapi-java-client</artifactId>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
