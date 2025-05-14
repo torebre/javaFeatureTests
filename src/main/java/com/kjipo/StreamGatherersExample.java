@@ -67,7 +67,7 @@ public class StreamGatherersExample {
 
     private static DataRecord generateDataRecord(long inputId) {
         SplittableRandom splittableRandom = random.split();
-        return new DataRecord(inputId,
+        return new DataRecord(UUID.randomUUID(),
                 "Datapoint_" + inputId,
                 splittableRandom.nextInt(10),
                 ZonedDateTime.now().minusDays(splittableRandom.nextLong(10 * 365)));
